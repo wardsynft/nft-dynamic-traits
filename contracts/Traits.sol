@@ -80,7 +80,7 @@ contract Traits is ERC1155, Ownable {
     ) public override(ERC1155) {
         super.safeTransferFrom(from, to, id, amount, data);
         emit TokenTransferred(id);
-        // TODO: Handle removing trait from ERC721 token :
+        // TODO: Handle removing trait from ERC721 token :/
     }
 
     function initialiseTrait(uint256 id, uint256 rarity, uint256 tokenType) external onlyOwner {
